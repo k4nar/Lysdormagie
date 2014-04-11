@@ -48,6 +48,7 @@ a:hover {
   margin-top: 50px;
 
   max-height: 33%;
+  max-width: 90%;
 }
 
 #page4 {
@@ -79,7 +80,6 @@ a:hover {
 section {
   height: 95%;
   min-height: 95%;
-  max-height: 200%;
   width: 100%;
   background-size: 40% auto;
   background-repeat: no-repeat;
@@ -187,15 +187,24 @@ h2 {
   section {
     background-image: none !important;
     height: auto;
+    min-height: 100%;
   }
 
   section:before {
     display: none;
   }
 
+  #booking, #price {
+    margin-top: 2em;
+    text-align: center;
+    position: static;
+    float: none;
+    width: 100%;
+  }
+
   .text {
     margin: 0 !important;
-    padding: 3em;
+    padding: 10%;
     width: 80% !important;
     position: static !important;
   }
@@ -204,20 +213,23 @@ h2 {
     display: none;
   }
 
-  #date {
-    display: block !important;
-  }
-
-  #infos {
-    font-size: 1.3em;
-    color: white;
-
-    clear: both;
-
+  #header {
     text-align: center;
   }
 
-  body {
-    padding: 0;
+  #header strong {
+    margin-bottom: 1em;
+  }
+
+  #date {
+    margin-top: 1em;
+    display: block !important;
+    text-align: center;
+  }
+
+  #page3 img, #page5 img {
+    width: 100%;
+    max-height: 100%;
+    max-width: auto;
   }
 }
