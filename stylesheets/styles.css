@@ -74,6 +74,7 @@ section {
   background-size: 40% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  clear: both;
 }
 
 section:before {
