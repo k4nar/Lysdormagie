@@ -78,7 +78,7 @@ a:hover {
 }
 
 section {
-  height: 95%;
+  height: auto;
   min-height: 95%;
   width: 100%;
   background-size: 40% auto;

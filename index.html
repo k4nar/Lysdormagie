@@ -110,6 +110,18 @@
     </section>
 
     <script src="javascripts/scale.fix.js"></script>
+
+    <script type="text/javascript">
+      (function() {
+        var pages = document.getElementsByTagName('section');
+        for (var i=0; i < pages.length; i++) {
+          var page = pages[i];
+          console.log(page.offsetHeight);
+          page.style.height = page.offsetHeight + 'px';
+        }
+      }());
+    </script>
+
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
