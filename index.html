@@ -122,16 +122,15 @@
     <script src="javascripts/scale.fix.js"></script>
 
     <script type="text/javascript">
-      reload = function() {
-        var pages = document.getElementsByTagName('section');
-        for (var i=0; i < pages.length; i++) {
-          var page = pages[i];
-          page.style.height = page.offsetHeight + 'px';
+      (function() {
+        window.onload = function() {
+          var pages = document.getElementsByTagName('section');
+          for (var i=0; i < pages.length; i++) {
+            var page = pages[i];
+            page.style.height = page.offsetHeight + 'px';
+          }
         }
-      }
-
-      window.onload = reload;
-      reload();
+      }());
     </script>
 
     <script type="text/javascript">
