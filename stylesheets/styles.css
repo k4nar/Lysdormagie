@@ -83,6 +83,7 @@ section {
   width: 100%;
   background-size: 40% auto;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 section:before {
